@@ -1,0 +1,358 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #0d0d0d;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    border-bottom: 1px solid #333;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff0055;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 0 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ff0055;
+}
+
+.cta-btn {
+    background-color: #ff0055;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.cta-btn:hover {
+    background-color: #e6004c;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+    position: relative;
+}
+
+.hero-content {
+    max-width: 600px;
+    z-index: 2;
+}
+
+.hero h1 {
+    font-size: 64px;
+    margin-bottom: 20px;
+    line-height: 1.1;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #ccc;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #ff0055;
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #e6004c;
+}
+
+#canvas-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.hero-image {
+    z-index: 2;
+    max-width: 500px;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* Services Section */
+.services {
+    padding: 100px 50px;
+    background-color: #111;
+}
+
+.services h2 {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 60px;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.service-card {
+    background-color: #1a1a1a;
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+    border: 1px solid #333;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    border-color: #ff0055;
+}
+
+.service-card h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.service-card p {
+    color: #888;
+}
+
+/* AI Bot */
+#ai-bot-container {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 1000;
+}
+
+#chat-window {
+    width: 350px;
+    background: #1a1a1a;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+    border: 1px solid #333;
+}
+
+.hidden {
+    display: none;
+}
+
+.chat-header {
+    background: #ff0055;
+    color: #fff;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chat-header button {
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.chat-messages {
+    padding: 20px;
+    height: 250px;
+    overflow-y: auto;
+}
+
+.chat-messages p {
+    margin-bottom: 15px;
+    color: #ccc;
+}
+
+#chat-window input {
+    width: 100%;
+    padding: 15px;
+    background: #111;
+    border: none;
+    border-top: 1px solid #333;
+    color: #fff;
+}
+
+#chat-toggle-btn {
+    background: #ff0055;
+    color: #fff;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(255, 0, 85, 0.3);
+    float: right;
+}
+
+/* Contact Section */
+.contact {
+    padding: 100px 50px;
+    background-color: #0d0d0d;
+}
+
+.contact h2 {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 60px;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact input, 
+.contact textarea {
+    background-color: #1a1a1a;
+    border: 1px solid #333;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.contact button {
+    align-self: center;
+    border: none;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 30px;
+    background-color: #111;
+    border-top: 1px solid #333;
+    color: #888;
+}
+footer {
+    text-align: center;
+    padding: 30px;
+    background-color: #0b0f19;
+    border-top: 1px solid #1a2332;
+    color: #888;
+}
+
+.social-links {
+    margin-top: 12px;
+}
+
+.social-links a {
+    color: #00aaff;
+    font-size: 28px;
+    transition: color 0.3s ease, transform 0.2s ease;
+    display: inline-block;
+}
+
+.social-links a:hover {
+    color: #0055ff;
+    transform: scale(1.15);
+}
+/* Center alignment for Membership Plans */
+.pricing-section {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.pricing-grid {
+    display: flex;
+    justify-content: center; /* Plans ko screen ke beech me layega */
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap; /* Responsive screens ke liye */
+    max-width: 1100px;
+    margin: 30px auto;
+}
+
+/* Individual Card Styling */
+.pricing-grid .card {
+    background-color: #151c2c;
+    border: 1px solid #1a2332;
+    border-radius: 10px;
+    padding: 25px;
+    width: 280px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.pricing-grid .card:hover {
+    transform: translateY(-5px);
+    border-color: #00aaff;
+}
+
+/* Big, Blue & Centered Reputation Text */
+.gym-reputation {
+    text-align: center;
+    margin-top: 40px;
+    padding: 15px 20px;
+}
+
+.gym-reputation p {
+    font-size: 24px; /* Bada font size */
+    font-weight: 700;
+    color: #00aaff; /* Vibrant Blue color */
+    letter-spacing: 0.5px;
+    margin: 0;
+    text-transform: capitalize;
+}

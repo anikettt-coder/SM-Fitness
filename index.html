@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SM Fitness - Transform Your Life</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Three.js for 3D Animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header class="navbar">
+        <div class="logo">SM Fitness</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <a href="#contact" class="cta-btn">Join Now</a>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Sculpt Your Dream Physique</h1>
+            <p>Push your limits with world-class training and AI-driven guidance.</p>
+            <p\>Contect: 91+ 7060655037</p>
+            <a href="#services" class="btn">Explore Programs</a>
+        </div>
+        <!-- Container for 3D Animation background -->
+        <div id="canvas-container"></div>
+        <!-- Gym Influencer/Trainer image placeholder -->
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1000&auto=format&fit=crop" alt="Professional Gym Trainer">
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <h3>Personal Training</h3>
+                <p>One-on-one sessions tailored to your fitness goals.</p>
+            </div>
+            <div class="service-card">
+                <h3>Group Classes</h3>
+                <p>High-energy workouts with a community that motivates you.</p>
+            </div>
+            <div class="service-card">
+                <h3>AI Nutrition Plan</h3>
+                <p>Smart diet planning driven by Artificial Intelligence.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Bot Container -->
+    <div id="ai-bot-container">
+        <div id="chat-window" class="hidden">
+            <div class="chat-header">
+                <span>FitBot AI</span>
+                <button id="close-chat">X</button>
+            </div>
+            <div class="chat-messages">
+                <p>Hello! Ask me anything about fitness or our plans.</p>
+            </div>
+            <input type="text" placeholder="Type a message...">
+        </div>
+        <button id="chat-toggle-btn">Chat with AI</button>
+    </div>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Get In Touch</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 SM Fitness. All rights reserved.</p>
+    </footer>
+    <footer>
+    <p>&copy; 2026 SM Fitness. All rights reserved.</p>
+    <div class="social-links">
+        <a href="https://www.instagram.com/smfitnessn?dlrf=a3lrMHIxOXU3dGd1" target="_blank" aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+    </div>
+</footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<section id="pricing" class="pricing">
+    <h2>Membership Plans</h2>
+    <div class="pricing-grid">
+        <div class="pricing-card">
+            <h3>3 Months</h3>
+            <p class="price">₹4,000</p>
+            <a href="#contact" class="btn">Choose Plan</a>
+        </div>
+        <div class="pricing-card">
+            <h3>6 Months</h3>
+            <p class="price">₹5,000</p>
+            <a href="#contact" class="btn">Choose Plan</a>
+        </div>
+        <div class="pricing-card active">
+            <h3>12 Months</h3>
+            <p class="price">₹10,000</p>
+            <a href="#contact" class="btn">Choose Plan</a>
+        </div>
+    </div>
+    <div class="gym-reputation">
+        <p>Best Trainer, Best Fitness. SM Fitness is one of the top 10 gyms in Shahjahanpur.</p>
+    </div>
+</section>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
